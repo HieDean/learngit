@@ -8,3 +8,4 @@ cd ./git
 chmod 777 -R *
 sudo service cron start
 sudo service cron reload
+sudo vim /etc/crontab
