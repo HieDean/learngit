@@ -1,5 +1,6 @@
 import socket
 import os
+from time import strftime,gmtime
 # def get_host_ip():
 # 	try:
 #		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -18,8 +19,9 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(('8.8.8.8', 80))
 ip = s.getsockname()[0]
 s.close()
+now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 f = open('readme.txt','a')
 #f.seek(0)
 #f.truncate()
-f.write(ip)
+f.write(ip+now+"\n")
 f.close()
