@@ -6,3 +6,5 @@ python /home/lab532/hiedean/learngit/config.py
 git config credential.helper store
 cd ./git
 chmod 777 -R *
+sudo service cron start
+sudo service cron reload
