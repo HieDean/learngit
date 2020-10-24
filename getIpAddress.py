@@ -19,7 +19,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(('8.8.8.8', 80))
 ip = s.getsockname()[0]
 s.close()
-now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+now =time.ctime()
 f = open('readme.txt','w')
 #f.seek(0)
 #f.truncate()
