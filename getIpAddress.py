@@ -20,7 +20,7 @@ s.connect(('8.8.8.8', 80))
 ip = s.getsockname()[0]
 s.close()
 now = strftime("%Y-%m-%d %H:%M:%S", gmtime())
-f = open('readme.txt','w')
+f = open('readme.txt','a')
 #f.seek(0)
 #f.truncate()
 f.write(ip+" "+now+"\n")
