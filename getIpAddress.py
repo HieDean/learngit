@@ -1,6 +1,6 @@
 import socket
 import os
-from time
+import time
 # def get_host_ip():
 # 	try:
 #		s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
