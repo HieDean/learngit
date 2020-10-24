@@ -1,5 +1,5 @@
 cd /home/lab532/hiedean/learngit/
 python getIpAddress.py
-sudo git add .
-sudo git commit -m "autoUpdate"
-sudo git push origin master
+git add .
+git commit -m "autoUpdate"
+git push origin master
